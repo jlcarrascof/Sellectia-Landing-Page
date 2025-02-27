@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,24 +7,41 @@
     <link rel="stylesheet" href="css/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;700&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js"></script>
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="#nosotros">Nosotros</a></li>
-                <li><a href="#servicios">Servicios</a></li>
-                <li><a href="#proyectos">Proyectos</a></li>
-                <li><a href="#contacto">Contacto</a></li>
-            </ul>
-        </nav>
+    <header class="navbar">
+        <div class="container">
+            <a href="#" class="logo"> <img src="img/logo-impacta.png" alt="Impacta Logo"> </a>
+            <nav>
+                <ul>
+                    <li><a href="#nosotros">Nosotros</a></li>
+                    <li><a href="#servicios">Servicios</a></li>
+                    <li><a href="#proyectos">Proyectos</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </nav>
+            <div class="social-icons">
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+        </div>
     </header>
 
     <main>
-        <section id="hero">
-            <div class="hero-content">
-                <h1>Creatividad sin límites para impulsar tu marca</h1>
-                <p>Transformamos ideas en experiencias inolvidables.</p>
+        <section id="hero" class="carousel">
+            <div class="carousel-container">
+                <div class="slide active">
+                    <img src="img/ZONA-01.jpg" alt="Monstruo Verde">
+                    <div class="overlay">
+                        <h1>A veces, somos gente normal</h1>
+                    </div>
+                </div>
+                <!-- Más slides aquí -->
+            </div>
+            <div class="controls">
+                <span class="prev">&#10094;</span>
+                <span class="next">&#10095;</span>
             </div>
         </section>
     </main>
