@@ -1,5 +1,7 @@
+@use 'variables';
+
 #hero {
-    background: $primary-color;
+    background: variables.$primary-color;
     color: white;
     text-align: center;
     padding: 100px 20px;

@@ -1,6 +1,8 @@
+@use 'variables';
+
 body {
-    font-family: $font-family;
-    background-color: $background-color;
+    font-family: variables.$font-family;
+    background-color: variables.$primary-color;
     margin: 0;
     padding: 0;
 }
