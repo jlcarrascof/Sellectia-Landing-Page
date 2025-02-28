@@ -59,11 +59,11 @@
         .numero::before {
             content: "";
             position: absolute;
-            width: 50px; /* Hace que el "extra" blanco sea más grande que el número */
+            width: 50px; 
             height: 50px;
             background: white;
             border-radius: 50%;
-            z-index: -1; /* Lo coloca detrás del número */
+            z-index: -1;
         }
 
         .icono {
@@ -71,9 +71,9 @@
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
-            width: 30%; /* Ajusta según tamaño deseado */
+            width: 30%;
             height: auto;
-            opacity: 0.8; /* Ajusta transparencia si es necesario */
+            opacity: 0.8;
             z-index: 2;
         }
     }
