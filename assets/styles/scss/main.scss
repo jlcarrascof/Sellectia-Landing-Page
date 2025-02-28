@@ -1,24 +1,40 @@
-@use 'variables' as v;  // Primero, importa las variables
+@use 'variables' as v;
 @use 'mixins';
 @use 'global';
 @use 'header';
 
-/*
-body {
-  background-color: v.$primary-color;
-  color: v.$text-color;
-}
-*/
-
 .hero {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 79vh;
-  position: relative;
-}
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 79vh;
+    position: relative;
+    overflow: hidden;
 
-.hero-img {
-  max-width: 100%;
-  height: auto;
+    .swiper {
+        width: 100%;
+        height: 100%;
+    }
+
+    .swiper-slide {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    .swiper-button-next,
+    .swiper-button-prev {
+        color: white;
+    }
+
+    .swiper-pagination-bullet {
+        background: white;
+    }
 }
