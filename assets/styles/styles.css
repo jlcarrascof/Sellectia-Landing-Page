@@ -41,6 +41,28 @@ body {
   width: 150px;
   height: auto;
 }
+.header .nav-menu {
+  flex-grow: 1;
+  text-align: center;
+}
+.header .nav-menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+.header .nav-menu a {
+  text-decoration: none;
+  color: #e2001a;
+  font-weight: bold;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+.header .nav-menu a:hover {
+  color: black;
+}
 .header .social a {
   display: inline-block;
   border-radius: 50%;
