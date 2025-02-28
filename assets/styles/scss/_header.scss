@@ -1,0 +1,26 @@
+@use 'variables';
+@use 'mixins';
+
+.header {
+    background-color: $secondary-color;
+    padding: 1rem 0;
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 2rem;
+    }
+
+    .logo {
+        width: 150px;  // Ajusta el tamaño del logo
+        height: auto;
+    }
+
+    .social a img {
+        width: 30px;  // Ajusta el tamaño de los íconos sociales
+        height: auto;
+    }
+}

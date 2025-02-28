@@ -1,10 +1,10 @@
 /* Error: Undefined variable.
- *    ,
- * 26 |             color: v.$white;
- *    |                    ^^^^^^^^
- *    '
- *   scss\_hero.scss 26:20  @import
- *   scss\styles.scss 4:9   root stylesheet */
+ *   ,
+ * 5 |     background-color: $secondary-color;
+ *   |                       ^^^^^^^^^^^^^^^^
+ *   '
+ *   assets\styles\scss\_header.scss 5:23  @use
+ *   assets\styles\scss\main.scss 4:1      root stylesheet */
 
 body::before {
   font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
@@ -14,5 +14,5 @@ body::before {
   padding: 1em;
   margin-bottom: 1em;
   border-bottom: 2px solid black;
-  content: "Error: Undefined variable.\a    \2577 \a 26 \2502              color: v.$white;\d\a    \2502                     ^^^^^^^^\a    \2575 \a   scss\\_hero.scss 26:20  @import\a   scss\\styles.scss 4:9   root stylesheet";
+  content: "Error: Undefined variable.\a   \2577 \a 5 \2502      background-color: $secondary-color;\d\a   \2502                        ^^^^^^^^^^^^^^^^\a   \2575 \a   assets\\styles\\scss\\_header.scss 5:23  @use\a   assets\\styles\\scss\\main.scss 4:1      root stylesheet";
 }
