@@ -19,9 +19,29 @@
         height: auto;
     }
 
-    .icon {
-        fill: red; // Cambia el color a rojo
-        width: 30px;
-        height: 30px;
+    .social {
+        a {
+          display: inline-block;
+          background-color: rgba(0, 0, 0, 0.5); // Fondo semitransparente
+          border-radius: 50%; // Forma circular
+          padding: 5px; // Espacio alrededor del ícono
+          transition: background-color 0.3s ease;
+
+          &:hover {
+            background-color: rgba(0, 0, 0, 0.8); // Fondo más oscuro al hacer hover
+          }
+
+          svg {
+            color: red; // Color del SVG (blanco)
+            width: 20px; // Ajusta el tamaño del SVG
+            height: 20px;
+          }
+
+          img {
+            filter: brightness(0) invert(1); // Convierte el SVG a blanco
+            width: 20px;
+            height: 20px;
+          }
+        }
     }
 }

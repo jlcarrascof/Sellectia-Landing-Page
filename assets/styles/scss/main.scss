@@ -3,10 +3,12 @@
 @use 'global';
 @use 'header';
 
+/*
 body {
-  background-color: white;
+  background-color: v.$primary-color;
   color: v.$text-color;
 }
+*/
 
 .hero {
   display: flex;
