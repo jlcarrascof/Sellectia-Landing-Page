@@ -1,27 +1,18 @@
-body {
-  font-family: "Outfit", sans-serif;
-  background-color: #e2001a;
-  margin: 0;
-  padding: 0;
-}
+/* Error: Undefined variable.
+ *    ,
+ * 26 |             color: v.$white;
+ *    |                    ^^^^^^^^
+ *    '
+ *   scss\_hero.scss 26:20  @import
+ *   scss\styles.scss 4:9   root stylesheet */
 
-#hero {
-  background: #e2001a;
-  color: white;
-  text-align: center;
-  padding: 100px 20px;
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: Undefined variable.\a    \2577 \a 26 \2502              color: v.$white;\d\a    \2502                     ^^^^^^^^\a    \2575 \a   scss\\_hero.scss 26:20  @import\a   scss\\styles.scss 4:9   root stylesheet";
 }
-#hero .hero-content {
-  max-width: 800px;
-  margin: 0 auto;
-}
-#hero h1 {
-  font-size: 2.5rem;
-  font-weight: 700;
-}
-#hero p {
-  font-size: 1.2rem;
-  font-weight: 300;
-}
-
-/*# sourceMappingURL=styles.css.map */

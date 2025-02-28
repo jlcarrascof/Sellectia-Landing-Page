@@ -1,0 +1,27 @@
+header {
+
+    background: white;
+    border-bottom: 5px solid $primary-color;
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem;
+      .logo {
+        height: 50px; // Ajusta según el logo real
+      }
+      .nav-menu {
+        list-style: none;
+        display: flex;
+        gap: 1rem;
+        a {
+          text-decoration: none;
+          color: $primary-color;
+          &:hover {
+            color: darken($primary-color, 10%);
+          }
+        }
+      }
+    }
+}

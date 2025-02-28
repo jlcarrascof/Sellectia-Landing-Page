@@ -1,8 +1,15 @@
-@use 'variables';
+@use 'variables' as v;
 
 body {
-    font-family: variables.$font-family;
-    background-color: variables.$primary-color;
+    font-family: v.$font-family;
     margin: 0;
     padding: 0;
+    background: v.$white;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: v.$black;
+    color: v.$white;
 }
