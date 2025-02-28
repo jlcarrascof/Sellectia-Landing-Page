@@ -15,7 +15,10 @@
     }
 
     .servicio {
-        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start; /* Asegura que los textos estén alineados a la izquierda */
+        text-align: left; /* Justifica títulos y párrafos */
         background: #fff;
         padding: 20px;
     }
@@ -24,19 +27,23 @@
         position: relative;
         overflow: hidden;
         border-radius: 10px;
+        width: 100%;
+        height: 300px; /* Ajusta esto según el diseño */
 
         img {
             width: 100%;
+            height: 100%;
+            object-fit: cover; /* Mantiene proporción y evita deformaciones */
             display: block;
-            filter: brightness(0.7);
+            filter: brightness(0.9);
         }
 
         .numero {
             position: absolute;
-            top: 10px;
-            left: 10px;
-            background: red;
-            color: white;
+            bottom: -10px;
+            left: -5px;
+            background: white;
+            color: red;
             font-size: 18px;
             font-weight: bold;
             padding: 8px;
@@ -51,7 +58,7 @@
 
     h3 {
         margin-top: 20px;
-        font-size: 22px;
+        font-size: 32px;
         font-weight: bold;
         color: #000;
     }
