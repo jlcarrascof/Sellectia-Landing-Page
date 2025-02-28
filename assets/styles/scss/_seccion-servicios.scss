@@ -40,8 +40,8 @@
 
         .numero {
             position: absolute;
-            bottom: -10px;
-            left: -5px;
+            bottom: -8px;
+            left: 0px;
             background: white;
             color: red;
             font-size: 18px;
@@ -53,6 +53,17 @@
             display: flex;
             align-items: center;
             justify-content: center;
+            z-index: 2;
+        }
+
+        .numero::before {
+            content: "";
+            position: absolute;
+            width: 50px; /* Hace que el "extra" blanco sea más grande que el número */
+            height: 50px;
+            background: white;
+            border-radius: 50%;
+            z-index: -1; /* Lo coloca detrás del número */
         }
     }
 
