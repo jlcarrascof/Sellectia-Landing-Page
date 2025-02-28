@@ -21,7 +21,7 @@
         max-width: 1200px;
         margin: 0 auto;
         padding: 0 2rem;
-        border: none; // Asegura que no haya bordes
+        border: none;
     }
 
     .logo {
@@ -58,13 +58,11 @@
     .social {
         a {
           display: inline-block;
-          // background-color: rgba(0, 0, 0, 0.5); // Fondo semitransparente
-          border-radius: 50%; // Forma circular
-          padding: 5px; // Espacio alrededor del ícono
-          // transition: background-color 0.3s ease;
+          border-radius: 50%;
+          padding: 5px;
 
           &:hover {
-            background-color: white; // Fondo más oscuro al hacer hover
+            background-color: white;
           }
 
           img {
