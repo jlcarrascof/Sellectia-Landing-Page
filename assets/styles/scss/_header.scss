@@ -1,8 +1,8 @@
-@use 'variables';
+@use 'variables' as v;
 @use 'mixins';
 
 .header {
-    background-color: $secondary-color;
+    background-color: v.$text-color;
     padding: 1rem 0;
 
     .container {
@@ -15,12 +15,13 @@
     }
 
     .logo {
-        width: 150px;  // Ajusta el tamaño del logo
+        width: 150px;
         height: auto;
     }
 
-    .social a img {
-        width: 30px;  // Ajusta el tamaño de los íconos sociales
-        height: auto;
+    .icon {
+        fill: red; // Cambia el color a rojo
+        width: 30px;
+        height: 30px;
     }
 }

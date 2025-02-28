@@ -1,4 +1,22 @@
-@use 'variables';  // Primero, importa las variables
+@use 'variables' as v;  // Primero, importa las variables
 @use 'mixins';
 @use 'global';
 @use 'header';
+
+body {
+  background-color: white;
+  color: v.$text-color;
+}
+
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+  position: relative;
+}
+
+.hero-img {
+  max-width: 100%;
+  height: auto;
+}
