@@ -102,6 +102,7 @@
           text-align: left;
           color: #ffffff; // Color de texto blanco
           font-weight: lighter;
+          margin-left: -25px;
           span {
             color: #ffffff; // Color de texto blanco
             font-weight: bold;
@@ -120,11 +121,12 @@
           border-radius: 5px;
           color: #ffffff; // Color de texto blanco
           cursor: pointer;
-          position: relative; // Añadir posición relativa para posicionar el input
+          position: relative;
+          margin-left: 15px;
 
           input {
             position: absolute;
-            left: 0px; // Ajustar la posición del input según sea necesario
+            left: -45px; // Ajustar la posición del input según sea necesario
             top: 50%; // Alinear al nivel del texto
             transform: translateY(-50%);
             appearance: none;
@@ -149,9 +151,11 @@
             }
           }
 
+          /*
           span {
             margin-left: 40px; // Aumentar la distancia entre los rectángulos y los círculos
           }
+          */
         }
       }
 

@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -365,6 +366,7 @@ body {
   text-align: left;
   color: #ffffff;
   font-weight: lighter;
+  margin-left: -25px;
 }
 .contacto .formulario .seccion-derecha .radio-group h3 span {
   color: #ffffff;
@@ -383,10 +385,16 @@ body {
   color: #ffffff;
   cursor: pointer;
   position: relative;
+  margin-left: 15px;
+  /*
+  span {
+    margin-left: 40px; // Aumentar la distancia entre los rectángulos y los círculos
+  }
+  */
 }
 .contacto .formulario .seccion-derecha .radio-group label input {
   position: absolute;
-  left: 0px;
+  left: -45px;
   top: 50%;
   transform: translateY(-50%);
   appearance: none;
@@ -408,9 +416,6 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-}
-.contacto .formulario .seccion-derecha .radio-group label span {
-  margin-left: 40px;
 }
 .contacto .formulario .seccion-derecha .checkbox {
   display: flex;
