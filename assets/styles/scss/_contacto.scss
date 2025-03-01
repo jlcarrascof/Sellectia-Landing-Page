@@ -12,13 +12,13 @@
   }
 
   h2 {
-    text-align: left; // Alineado a la izquierda
+    text-align: left;
     margin-bottom: 20px;
-    font-weight: bold; // "ENVIANOS TU" en negritas
+    font-weight: bold;
     margin-left: 28px;
     span {
-      font-weight: normal; // "MENSAJE" en texto normal
-      color: v.$text-color; // Color blanco
+      font-weight: lighter;
+      color: v.$text-color;
     }
   }
 
@@ -29,13 +29,13 @@
 
   .formulario {
     display: grid;
-    grid-template-columns: 1fr 1fr; // Dos columnas (izquierda y derecha)
-    gap: 40px; // Espacio entre las dos secciones
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
 
     .seccion-izquierda {
       .inputs-grid {
         display: grid;
-        grid-template-columns: 1fr 1fr; // Dos columnas para los campos
+        grid-template-columns: 1fr 1fr;
         gap: 15px;
 
         .columna {
@@ -44,17 +44,17 @@
           gap: 15px;
 
           input {
-            background-color: v.$text-color; // Fondo blanco
-            border: 1px solid v.$text-color; // Borde blanco
-            border-radius: 8px; // Bordes redondeados
+            background-color: v.$text-color;
+            border: 1px solid v.$text-color;
+            border-radius: 8px;
             padding: 10px;
-            font-size: 16px; // Letra pequeña
-            color: v.$primary-color; // Texto en rojo
+            font-size: 16px;
+            color: v.$primary-color;
             font-weight: bold;
 
             &::placeholder {
-              color: v.$primary-color; // Placeholder en rojo
-              opacity: 1; // Asegura que el color sea sólido
+              color: v.$primary-color;
+              opacity: 1;
             }
           }
         }
@@ -66,16 +66,16 @@
         margin-top: 20px;
         padding: 10px;
         resize: vertical;
-        background-color: v.$text-color; // Fondo blanco
-        border: 1px solid v.$text-color; // Borde blanco
-        border-radius: 8px; // Bordes redondeados
-        font-size: 18px; // Letra pequeña
-        color: v.$primary-color; // Texto en rojo
+        background-color: v.$text-color;
+        border: 1px solid v.$text-color;
+        border-radius: 8px;
+        font-size: 18px;
+        color: v.$primary-color;
         font-weight: bold;
 
         &::placeholder {
-          color: v.$primary-color; // Placeholder en rojo
-          opacity: 1; // Asegura que el color sea sólido
+          color: v.$primary-color;
+          opacity: 1;
         }
       }
 
@@ -88,26 +88,89 @@
       display: flex;
       flex-direction: column;
       gap: 20px;
+      /* extra */
+      align-items: center;
+      background-color: v.$primary-color; // Color de fondo rojo
+      padding: 20px;
+      border-radius: 10px;
+      /* extra */
 
       .radio-group {
+        width: 100%;
         h3 {
           margin-bottom: 10px;
+          text-align: left;
+          color: #ffffff; // Color de texto blanco
+          font-weight: lighter;
           span {
-            color: v.$secondary-color;
+            color: #ffffff; // Color de texto blanco
+            font-weight: bold;
           }
         }
 
         label {
-          display: block;
+          display: flex;
+          align-items: center;
+          justify-content: flex-start; // Alinear la leyenda a la izquierda
+          width: 100%;
           margin-bottom: 10px;
+          padding: 10px;
+          background-color: transparent;
+          border: 1px solid #ffffff; // Color de borde blanco
+          border-radius: 5px;
+          color: #ffffff; // Color de texto blanco
+          cursor: pointer;
+          position: relative; // Añadir posición relativa para posicionar el input
+
+          input {
+            position: absolute;
+            left: 0px; // Ajustar la posición del input según sea necesario
+            top: 50%; // Alinear al nivel del texto
+            transform: translateY(-50%);
+            appearance: none;
+            background-color: transparent;
+            border: 1px solid #ffffff; // Borde más delgado
+            border-radius: 50%;
+            width: 20px;
+            height: 20px;
+            display: inline-block;
+
+            &:checked::before {
+              content: '';
+              display: block;
+              width: 12px;
+              height: 12px;
+              border-radius: 50%;
+              background-color: #ffffff; // Color de selección blanco
+              position: absolute;
+              top: 50%;
+              left: 50%;
+              transform: translate(-50%, -50%);
+            }
+          }
+
+          span {
+            margin-left: 40px; // Aumentar la distancia entre los rectángulos y los círculos
+          }
         }
       }
 
       .checkbox {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        margin-bottom: 20px;
+
+        input {
+          margin-right: 10px;
+        }
+
         label {
           font-size: 14px;
+          color: #ffffff; // Color de texto blanco
           a {
-            color: v.$secondary-color;
+            color: #ffffff; // Color de texto blanco
             text-decoration: underline;
           }
         }
@@ -115,14 +178,15 @@
 
       .btn-enviar {
         padding: 10px 20px;
-        background-color: v.$secondary-color;
-        color: v.$text-color;
+        background-color: #ffcc00; // Color de fondo amarillo
+        color: #ffffff; // Color de texto blanco
         border: none;
+        border-radius: 5px;
         cursor: pointer;
         transition: background-color 0.3s;
 
         &:hover {
-          background-color: darken(v.$secondary-color, 10%);
+          background-color: darken(#ffcc00, 10%);
         }
       }
     }

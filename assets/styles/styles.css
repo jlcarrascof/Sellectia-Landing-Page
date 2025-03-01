@@ -291,7 +291,7 @@ body {
   margin-left: 28px;
 }
 .contacto h2 span {
-  font-weight: normal;
+  font-weight: lighter;
   color: #FFFFFF;
 }
 .contacto .formulario-container {
@@ -350,34 +350,97 @@ body {
   display: flex;
   flex-direction: column;
   gap: 20px;
+  /* extra */
+  align-items: center;
+  background-color: #e2001a;
+  padding: 20px;
+  border-radius: 10px;
+  /* extra */
+}
+.contacto .formulario .seccion-derecha .radio-group {
+  width: 100%;
 }
 .contacto .formulario .seccion-derecha .radio-group h3 {
   margin-bottom: 10px;
+  text-align: left;
+  color: #ffffff;
+  font-weight: lighter;
 }
 .contacto .formulario .seccion-derecha .radio-group h3 span {
-  color: #001C3A;
+  color: #ffffff;
+  font-weight: bold;
 }
 .contacto .formulario .seccion-derecha .radio-group label {
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
   margin-bottom: 10px;
+  padding: 10px;
+  background-color: transparent;
+  border: 1px solid #ffffff;
+  border-radius: 5px;
+  color: #ffffff;
+  cursor: pointer;
+  position: relative;
+}
+.contacto .formulario .seccion-derecha .radio-group label input {
+  position: absolute;
+  left: 0px;
+  top: 50%;
+  transform: translateY(-50%);
+  appearance: none;
+  background-color: transparent;
+  border: 1px solid #ffffff;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+}
+.contacto .formulario .seccion-derecha .radio-group label input:checked::before {
+  content: "";
+  display: block;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.contacto .formulario .seccion-derecha .radio-group label span {
+  margin-left: 40px;
+}
+.contacto .formulario .seccion-derecha .checkbox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 20px;
+}
+.contacto .formulario .seccion-derecha .checkbox input {
+  margin-right: 10px;
 }
 .contacto .formulario .seccion-derecha .checkbox label {
   font-size: 14px;
+  color: #ffffff;
 }
 .contacto .formulario .seccion-derecha .checkbox label a {
-  color: #001C3A;
+  color: #ffffff;
   text-decoration: underline;
 }
 .contacto .formulario .seccion-derecha .btn-enviar {
   padding: 10px 20px;
-  background-color: #001C3A;
-  color: #FFFFFF;
+  background-color: #ffcc00;
+  color: #ffffff;
   border: none;
+  border-radius: 5px;
   cursor: pointer;
   transition: background-color 0.3s;
 }
 .contacto .formulario .seccion-derecha .btn-enviar:hover {
-  background-color: rgb(0, 3.3793103448, 7);
+  background-color: rgb(204, 163.2, 0);
 }
 
 .hero {
