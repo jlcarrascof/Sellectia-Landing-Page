@@ -1,12 +1,12 @@
 @use 'variables' as v;
 
 .clientes {
-    background: linear-gradient(to bottom, #ffc3c7, v.$primary-color);
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.5) 5%, #e2001a 20%, #e2001a 100%);
     padding: 300px 0 80px;
     text-align: center;
 
     h2 {
-        font-size: 1.5rem;
+        font-size: 1rem;
         color: white;
         margin-bottom: 50px;
         padding: 0;
@@ -15,7 +15,7 @@
     }
 
     .clientes-container {
-        max-width: 1100px;
+        max-width: 1300px;
         margin: 0 auto;
     }
 
@@ -27,13 +27,13 @@
         justify-content: center;
 
         .cliente {
-            background: rgba(255, 0, 0, 0.7);
+            background: rgba(223, 52, 52, 0.698);
             border-radius: 10px;
             display: flex;
             justify-content: center;
             align-items: center;
             padding: 15px;
-            height: 100px;
+            height: 150px;
             transition: transform 0.2s ease-in-out;
 
             &:hover {
@@ -41,8 +41,8 @@
             }
 
             img {
-                max-width: 90%;
-                max-height: 70px;
+                max-width: 50%;
+                max-height: 60px;
                 filter: brightness(0) invert(1);
                 object-fit: contain;
             }
