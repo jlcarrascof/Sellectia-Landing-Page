@@ -1,16 +1,16 @@
 @use 'variables' as v;
 
 .clientes {
-    background: linear-gradient(to bottom, #ffc3c7, v.$primary-color); // Mantener el degradado
-    padding: 300px 0 80px; // Empuja el contenido hacia abajo un 70%
+    background: linear-gradient(to bottom, #ffc3c7, v.$primary-color);
+    padding: 300px 0 80px;
     text-align: center;
 
     h2 {
         font-size: 1.5rem;
         color: white;
         margin-bottom: 50px;
-        padding: 0; // Quitar el padding de fondo
-        background: none; // Eliminar el fondo rosa
+        padding: 0;
+        background: none;
         display: inline-block;
     }
 
