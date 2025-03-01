@@ -251,6 +251,21 @@ body {
 .clientes .clientes-grid .cliente:nth-child(12) {
   grid-column: span 1;
 }
+@media (max-width: 1024px) {
+  .clientes .clientes-grid {
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
+@media (max-width: 768px) {
+  .clientes .clientes-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media (max-width: 480px) {
+  .clientes .clientes-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
 
 .hero {
   display: flex;

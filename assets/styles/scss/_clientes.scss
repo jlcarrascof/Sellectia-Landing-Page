@@ -59,4 +59,22 @@
             grid-column: span 1;
         }
     }
+
+    @media (max-width: 1024px) {
+        .clientes-grid {
+            grid-template-columns: repeat(5, 1fr); // 5 columnas en tablets grandes
+        }
+    }
+
+    @media (max-width: 768px) {
+        .clientes-grid {
+            grid-template-columns: repeat(3, 1fr); // 3 columnas en tablets pequeñas
+        }
+    }
+
+    @media (max-width: 480px) {
+        .clientes-grid {
+            grid-template-columns: repeat(2, 1fr); // 2 columnas en móviles
+        }
+    }
 }
