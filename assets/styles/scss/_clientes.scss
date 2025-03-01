@@ -21,8 +21,8 @@
 
     .clientes-grid {
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-        gap: 25px;
+        grid-template-columns: repeat(7, 1fr);
+        gap: 15px;
         padding: 0 20px;
         justify-content: center;
 
@@ -46,6 +46,17 @@
                 filter: brightness(0) invert(1);
                 object-fit: contain;
             }
+        }
+
+        .cliente:nth-child(8),
+        .cliente:nth-child(9) {
+            grid-column: span 2;
+        }
+
+        .cliente:nth-child(10),
+        .cliente:nth-child(11),
+        .cliente:nth-child(12) {
+            grid-column: span 1;
         }
     }
 }

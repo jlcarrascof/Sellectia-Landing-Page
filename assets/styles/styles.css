@@ -218,8 +218,8 @@ body {
 }
 .clientes .clientes-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-  gap: 25px;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 15px;
   padding: 0 20px;
   justify-content: center;
 }
@@ -241,6 +241,15 @@ body {
   max-height: 70px;
   filter: brightness(0) invert(1);
   object-fit: contain;
+}
+.clientes .clientes-grid .cliente:nth-child(8),
+.clientes .clientes-grid .cliente:nth-child(9) {
+  grid-column: span 2;
+}
+.clientes .clientes-grid .cliente:nth-child(10),
+.clientes .clientes-grid .cliente:nth-child(11),
+.clientes .clientes-grid .cliente:nth-child(12) {
+  grid-column: span 1;
 }
 
 .hero {
