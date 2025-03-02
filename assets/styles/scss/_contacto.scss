@@ -1,4 +1,5 @@
 @use 'variables' as v;
+@use "sass:color";
 
 .contacto {
   background-color: v.$primary-color;
@@ -218,7 +219,7 @@
         transform: translateX(15px);
 
         &:hover {
-          background-color: darken(#ffcc00, 10%);
+          background-color: color.adjust(#ffcc00, $lightness: -10%);
         }
       }
     }
