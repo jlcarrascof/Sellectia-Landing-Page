@@ -552,9 +552,14 @@ body {
   margin-bottom: 20px;
   font-weight: lighter;
 }
+.footer .columna p {
+  margin-top: 10px;
+  font-size: 1rem;
+}
 .footer .columna a {
   color: #FFFFFF;
   text-decoration: none;
+  font-size: 0.7rem;
 }
 .footer .columna a:hover {
   text-decoration: underline;
@@ -562,6 +567,7 @@ body {
 .footer .columna .iconos {
   display: flex;
   gap: 10px;
+  margin-bottom: 5px;
 }
 .footer .columna .iconos img {
   width: 24px;

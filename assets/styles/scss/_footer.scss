@@ -21,9 +21,15 @@
       font-weight: lighter;
     }
 
+    p {
+      margin-top: 10px;
+      font-size: 1rem;
+    }
+
     a {
       color: v.$text-color;
       text-decoration: none;
+      font-size: 0.7rem;
       &:hover {
         text-decoration: underline;
       }
@@ -32,6 +38,7 @@
     .iconos {
       display: flex;
       gap: 10px;
+      margin-bottom: 5px;
 
       img {
         width: 24px;
