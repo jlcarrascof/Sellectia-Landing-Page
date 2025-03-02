@@ -532,6 +532,56 @@ body {
   transition: color 0.3s;
 }
 
+.footer {
+  background-color: #001C3A;
+  color: #FFFFFF;
+  padding: 20px;
+}
+.footer .footer-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+.footer .footer-column {
+  display: flex;
+  flex-direction: column;
+}
+.footer .footer-column h3 {
+  margin-bottom: 10px;
+  font-size: 18px;
+  font-weight: 700;
+}
+.footer .footer-column p {
+  margin: 5px 0;
+  font-size: 14px;
+}
+.footer .social-icons {
+  display: flex;
+  gap: 10px;
+}
+.footer .social-icons a {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+.footer .payment-methods {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.footer .payment-methods img {
+  width: 30px;
+  height: 20px;
+}
+.footer .logo {
+  margin-top: 20px;
+  text-align: right;
+}
+.footer .logo img {
+  width: 100px;
+  height: auto;
+}
+
 .hero {
   display: flex;
   justify-content: center;

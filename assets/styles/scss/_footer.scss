@@ -1,0 +1,66 @@
+// Variables para colores y tipografía
+@use 'variables' as v;
+
+$font-size-base: 14px;
+$font-size-heading: 18px;
+$font-weight-bold: 700;
+
+.footer {
+  background-color: v.$secondary-color;
+  color: v.$text-color;
+  padding: 20px;
+
+  .footer-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+  }
+
+  .footer-column {
+    display: flex;
+    flex-direction: column;
+
+    h3 {
+      margin-bottom: 10px;
+      font-size: $font-size-heading;
+      font-weight: $font-weight-bold;
+    }
+
+    p {
+      margin: 5px 0;
+      font-size: $font-size-base;
+    }
+  }
+
+  .social-icons {
+    display: flex;
+    gap: 10px;
+
+    a {
+      color: v.$text-color;
+      text-decoration: none;
+    }
+  }
+
+  .payment-methods {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    img {
+      width: 30px;
+      height: 20px;
+    }
+  }
+
+  .logo {
+    margin-top: 20px;
+    text-align: right;
+
+    img {
+      width: 100px;
+      height: auto;
+    }
+  }
+}
