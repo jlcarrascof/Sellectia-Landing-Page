@@ -544,10 +544,13 @@ body {
   display: flex;
   flex-direction: column;
   gap: 10px;
+  font-size: smaller;
 }
 .footer .columna h4 {
   color: #e2001a;
-  font-weight: bold;
+  font-size: 1rem;
+  margin-bottom: 20px;
+  font-weight: lighter;
 }
 .footer .columna a {
   color: #FFFFFF;
@@ -566,6 +569,7 @@ body {
 }
 .footer .columna .logo {
   margin-top: 10px;
+  justify-items: right;
 }
 .footer .columna .logo img {
   width: 100px;
