@@ -100,11 +100,11 @@
         h3 {
           margin-bottom: 10px;
           text-align: left;
-          color: #ffffff; // Color de texto blanco
+          color: #ffffff;
           font-weight: lighter;
           margin-left: -25px;
           span {
-            color: #ffffff; // Color de texto blanco
+            color: #ffffff;
             font-weight: bold;
           }
         }
@@ -112,26 +112,26 @@
         label {
           display: flex;
           align-items: center;
-          justify-content: flex-start; // Alinear la leyenda a la izquierda
+          justify-content: flex-start;
           width: 100%;
           margin-bottom: 10px;
           padding: 10px;
           background-color: transparent;
-          border: 1px solid #ffffff; // Color de borde blanco
+          border: 1px solid #ffffff;
           border-radius: 5px;
-          color: #ffffff; // Color de texto blanco
+          color: #ffffff;
           cursor: pointer;
           position: relative;
           margin-left: 15px;
 
           input {
             position: absolute;
-            left: -45px; // Ajustar la posición del input según sea necesario
-            top: 50%; // Alinear al nivel del texto
+            left: -45px;
+            top: 50%;
             transform: translateY(-50%);
             appearance: none;
             background-color: transparent;
-            border: 1px solid #ffffff; // Borde más delgado
+            border: 1px solid #ffffff;
             border-radius: 50%;
             width: 20px;
             height: 20px;
@@ -143,27 +143,21 @@
               width: 12px;
               height: 12px;
               border-radius: 50%;
-              background-color: #ffffff; // Color de selección blanco
+              background-color: #ffffff;
               position: absolute;
               top: 50%;
               left: 50%;
               transform: translate(-50%, -50%);
             }
           }
-
-          /*
-          span {
-            margin-left: 40px; // Aumentar la distancia entre los rectángulos y los círculos
-          }
-          */
         }
       }
 
       .checkbox {
         display: flex;
-        align-items: center; // Alinear al centro para que el checkbox y el texto estén alineados
-        gap: 10px; // Espacio entre el checkbox y la leyenda
+        align-items: flex-start; // Alinear al inicio para que el checkbox y el texto estén alineados
         margin-bottom: 20px;
+        gap: 10px; // Espacio entre el checkbox y la leyenda
 
         input {
           appearance: none;
@@ -193,9 +187,13 @@
           color: #ffffff; // Color de texto blanco
           line-height: 1.2; // Ajustar la altura de la línea para que el texto quede en dos líneas
           flex: 1; // Permitir que el texto ocupe el espacio restante
-          a {
-            color: #ffffff; // Color de texto blanco
-            text-decoration: underline;
+
+          p {
+            margin: 0; // Eliminar el margen de los párrafos para que se alineen correctamente
+            a {
+              color: #ffffff; // Color de texto blanco
+              text-decoration: underline;
+            }
           }
         }
       }
@@ -208,7 +206,8 @@
         border-radius: 5px;
         cursor: pointer;
         transition: background-color 0.3s;
-        align-self: center; // Alinear el botón al centro
+        align-self: flex-start; // Alinear el botón a la izquierda para que esté junto al checkbox
+        margin-top: 20px; // Añadir un margen superior para separar del checkbox
 
         &:hover {
           background-color: darken(#ffcc00, 10%);
