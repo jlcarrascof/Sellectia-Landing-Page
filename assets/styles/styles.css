@@ -420,16 +420,35 @@ body {
 .contacto .formulario .seccion-derecha .checkbox {
   display: flex;
   align-items: center;
-  justify-content: center;
-  width: 100%;
+  gap: 10px;
   margin-bottom: 20px;
 }
 .contacto .formulario .seccion-derecha .checkbox input {
-  margin-right: 10px;
+  appearance: none;
+  width: 24px;
+  height: 24px;
+  border: 2px solid #ffffff;
+  border-radius: 4px;
+  background-color: #ffffff;
+  position: relative;
+  cursor: pointer;
+}
+.contacto .formulario .seccion-derecha .checkbox input:checked::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 14px;
+  height: 14px;
+  background-color: #ff0000;
+  border-radius: 2px;
 }
 .contacto .formulario .seccion-derecha .checkbox label {
   font-size: 14px;
   color: #ffffff;
+  line-height: 1.2;
+  flex: 1;
 }
 .contacto .formulario .seccion-derecha .checkbox label a {
   color: #ffffff;
@@ -443,6 +462,7 @@ body {
   border-radius: 5px;
   cursor: pointer;
   transition: background-color 0.3s;
+  align-self: center;
 }
 .contacto .formulario .seccion-derecha .btn-enviar:hover {
   background-color: rgb(204, 163.2, 0);

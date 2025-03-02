@@ -161,18 +161,38 @@
 
       .checkbox {
         display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 100%;
+        align-items: center; // Alinear al centro para que el checkbox y el texto estén alineados
+        gap: 10px; // Espacio entre el checkbox y la leyenda
         margin-bottom: 20px;
 
         input {
-          margin-right: 10px;
+          appearance: none;
+          width: 24px; // Hacer el checkbox más grande
+          height: 24px; // Hacer el checkbox más grande
+          border: 2px solid #ffffff; // Borde blanco
+          border-radius: 4px;
+          background-color: #ffffff; // Fondo blanco
+          position: relative;
+          cursor: pointer;
+
+          &:checked::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 14px;
+            height: 14px;
+            background-color: #ff0000; // Color de selección rojo
+            border-radius: 2px;
+          }
         }
 
         label {
           font-size: 14px;
           color: #ffffff; // Color de texto blanco
+          line-height: 1.2; // Ajustar la altura de la línea para que el texto quede en dos líneas
+          flex: 1; // Permitir que el texto ocupe el espacio restante
           a {
             color: #ffffff; // Color de texto blanco
             text-decoration: underline;
@@ -188,6 +208,7 @@
         border-radius: 5px;
         cursor: pointer;
         transition: background-color 0.3s;
+        align-self: center; // Alinear el botón al centro
 
         &:hover {
           background-color: darken(#ffcc00, 10%);
