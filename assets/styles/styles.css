@@ -442,7 +442,7 @@ body {
   transform: translate(-50%, -50%);
   width: 14px;
   height: 14px;
-  background-color: #ff0000;
+  background-color: #e2001a;
   border-radius: 2px;
 }
 .contacto .formulario .seccion-derecha .checkbox label {
@@ -470,6 +470,36 @@ body {
 }
 .contacto .formulario .seccion-derecha .btn-enviar:hover {
   background-color: rgb(204, 163.2, 0);
+}
+
+.suscripcion {
+  background-color: #FFFFFF;
+  color: #e2001a;
+  text-align: center;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.suscripcion .container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.suscripcion p {
+  font-size: 0.6rem;
+  font-weight: lighter;
+  color: rgb(255, 13.6, 41.3716814159);
+}
+.suscripcion p span {
+  font-weight: bold;
+  color: #e2001a;
+  margin-left: 5px;
+}
+.suscripcion p .cta {
+  text-decoration: underline;
+  margin-left: 5px;
+  color: #e2001a;
+  transition: color 0.3s;
 }
 
 .hero {
