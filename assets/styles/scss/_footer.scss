@@ -1,68 +1,40 @@
 // Variables para colores y tipografía
 @use 'variables' as v;
 
-$font-size-base: 14px;
-$font-size-heading: 18px;
-$font-weight-bold: 700;
-$font-weight-normal: 300;
-
 .footer {
-  background-color: v.$secondary-color;
-  color: v.$text-color;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  background-color: v.$secondary-color; // Fondo azul
+  color: v.$text-color; // Texto blanco
   padding: 20px;
 
-  .footer-container {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 20px;
-  }
-
-  .footer-column {
+  .columna {
     display: flex;
     flex-direction: column;
+    gap: 10px;
 
     h3 {
-      margin-bottom: 10px;
-      font-size: $font-size-heading;
-      font-weight: $font-weight-normal;
-      color: v.$primary-color;
+      color: v.$primary-color; // Título en rojo
+      font-weight: bold;
     }
-
-    p {
-      margin: 5px 0;
-      font-size: $font-size-base;
-    }
-  }
-
-  .social-icons {
-    display: flex;
-    gap: 10px;
 
     a {
-      color: v.$text-color;
+      color: v.$text-color; // Enlaces en blanco
       text-decoration: none;
+      &:hover {
+        text-decoration: underline;
+      }
     }
-  }
 
-  .payment-methods {
-    margin-top: 20px;
-    display: flex;
-    align-items: center;
-    gap: 10px;
+    .iconos {
+      display: flex;
+      gap: 10px;
 
-    img {
-      width: 30px;
-      height: 20px;
-    }
-  }
-
-  .logo {
-    margin-top: 20px;
-    text-align: right;
-
-    img {
-      width: 100px;
-      height: auto;
+      img {
+        width: 24px;
+        height: 24px;
+      }
     }
   }
 }
