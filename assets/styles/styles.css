@@ -549,7 +549,8 @@ body {
 .footer .footer-column h3 {
   margin-bottom: 10px;
   font-size: 18px;
-  font-weight: 700;
+  font-weight: 300;
+  color: #e2001a;
 }
 .footer .footer-column p {
   margin: 5px 0;
