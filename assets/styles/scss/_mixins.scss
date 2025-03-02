@@ -1,0 +1,16 @@
+// Flexbox
+@mixin flex-center($justify: center, $align: center) {
+    display: flex;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+// Media queries
+@mixin responsive($size) {
+    @if $size == tablet {
+        @media (max-width: 768px) { @content; }
+    }
+    @else if $size == mobile {
+        @media (max-width: 480px) { @content; }
+    }
+}
