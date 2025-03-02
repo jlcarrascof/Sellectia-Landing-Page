@@ -545,7 +545,7 @@ body {
   flex-direction: column;
   gap: 10px;
 }
-.footer .columna h3 {
+.footer .columna h4 {
   color: #e2001a;
   font-weight: bold;
 }
@@ -563,6 +563,12 @@ body {
 .footer .columna .iconos img {
   width: 24px;
   height: 24px;
+}
+.footer .columna .logo {
+  margin-top: 10px;
+}
+.footer .columna .logo img {
+  width: 100px;
 }
 
 .hero {
