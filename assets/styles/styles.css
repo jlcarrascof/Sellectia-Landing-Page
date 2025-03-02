@@ -16,6 +16,36 @@ body {
   padding: 20px;
 }
 
+.newsletter {
+  background-color: #e2001a;
+  color: #FFFFFF;
+  text-align: center;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.newsletter .container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.newsletter p {
+  font-size: 0.6rem;
+  font-weight: lighter;
+  color: white;
+}
+.newsletter p span {
+  font-weight: bold;
+  color: #FFFFFF;
+  margin-left: 5px;
+}
+.newsletter p .cta {
+  text-decoration: underline;
+  margin-left: 5px;
+  color: #FFFFFF;
+  transition: color 0.3s;
+}
+
 .header {
   background-color: #FFFFFF;
   padding: 1.2rem 1.5rem;
