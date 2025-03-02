@@ -1,0 +1,36 @@
+@use "variables" as v;
+@use "sass:color";
+
+.newsletter {
+    background-color: v.$primary-color; // Fondo blanco
+    color: v.$text-color; // Texto rojo
+    text-align: center;
+    height: 30px; // Altura fija
+    display: flex;
+    align-items: center; // Centrar verticalmente
+    justify-content: center; // Centrar horizontalmente
+
+    .container {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    p {
+        font-size: 0.6rem;
+        font-weight: lighter;
+        color: color.scale(v.$text-color, $lightness: 15%); // Rojo más claro
+
+        span {
+          font-weight: bold;
+          color: v.$text-color; // Rojo oscuro
+          margin-left: 5px;
+        }
+
+        .cta {
+          text-decoration: underline;
+          margin-left: 5px;
+          color: v.$text-color;
+          transition: color 0.3s;
+        }
+    }
+}
