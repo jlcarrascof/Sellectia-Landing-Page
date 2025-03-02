@@ -4,8 +4,8 @@
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 20px;
-  background-color: v.$secondary-color; // Fondo azul
-  color: v.$text-color; // Texto blanco
+  background-color: v.$secondary-color;
+  color: v.$text-color;
   padding: 20px;
 
   .columna {
@@ -15,14 +15,14 @@
     font-size: smaller;
 
     h4 {
-      color: v.$primary-color; // Título en rojo
+      color: v.$primary-color;
       font-size: 1rem;
       margin-bottom: 20px;
       font-weight: lighter;
     }
 
     a {
-      color: v.$text-color; // Enlaces en blanco
+      color: v.$text-color;
       text-decoration: none;
       &:hover {
         text-decoration: underline;
@@ -43,7 +43,7 @@
       margin-top: 10px;
       justify-items: right;
       img {
-        width: 100px; // Ajusta el tamaño del logo según sea necesario
+        width: 100px;
       }
     }
   }
