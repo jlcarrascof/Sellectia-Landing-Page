@@ -411,11 +411,18 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
 }
+.contacto .formulario .seccion-derecha .checkbox-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-top: 20px;
+}
 .contacto .formulario .seccion-derecha .checkbox {
   display: flex;
   align-items: flex-start;
-  margin-bottom: 20px;
   gap: 10px;
+  margin-left: -30px;
 }
 .contacto .formulario .seccion-derecha .checkbox input {
   appearance: none;
@@ -452,15 +459,14 @@ body {
   text-decoration: underline;
 }
 .contacto .formulario .seccion-derecha .btn-enviar {
-  padding: 10px 20px;
+  padding: 10px 60px;
   background-color: #ffcc00;
   color: #ffffff;
   border: none;
-  border-radius: 5px;
+  border-radius: 16px;
   cursor: pointer;
   transition: background-color 0.3s;
-  align-self: flex-start;
-  margin-top: 20px;
+  transform: translateX(15px);
 }
 .contacto .formulario .seccion-derecha .btn-enviar:hover {
   background-color: rgb(204, 163.2, 0);
