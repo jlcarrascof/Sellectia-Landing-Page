@@ -2,13 +2,13 @@
 @use "sass:color";
 
 .suscripcion {
-    background-color: v.$text-color; // Fondo blanco
-    color: v.$primary-color; // Texto rojo
+    background-color: v.$text-color;
+    color: v.$primary-color;
     text-align: center;
-    height: 30px; // Altura fija
+    height: 30px;
     display: flex;
-    align-items: center; // Centrar verticalmente
-    justify-content: center; // Centrar horizontalmente
+    align-items: center;
+    justify-content: center;
 
     .container {
         max-width: 1200px;
@@ -18,11 +18,11 @@
     p {
         font-size: 0.6rem;
         font-weight: lighter;
-        color: color.scale(v.$primary-color, $lightness: 15%); // Rojo más claro
+        color: color.scale(v.$primary-color, $lightness: 15%);
 
         span {
           font-weight: bold;
-          color: v.$primary-color; // Rojo oscuro
+          color: v.$primary-color;
           margin-left: 5px;
         }
 

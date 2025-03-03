@@ -8,6 +8,8 @@
 @use 'clientes';
 @use 'contacto';
 @use 'suscripcion';
+@use 'footer';
+@use 'final';
 
 .hero {
     display: flex;
@@ -52,11 +54,11 @@
 
     .swiper-button-next,
     .swiper-button-prev {
-        color: white;
+        color: v.$text-color;
     }
 
     .swiper-pagination-bullet {
-        background: white;
+        background: v.$text-color;
     }
 
 
@@ -65,7 +67,7 @@
       top: 70%;
       left: 5%;
       transform: translateY(-50%);
-      color: white;
+      color: v.$text-color;
       z-index: 3;
       max-width: 40%;
 

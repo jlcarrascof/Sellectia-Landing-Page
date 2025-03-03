@@ -89,12 +89,10 @@
       display: flex;
       flex-direction: column;
       gap: 20px;
-      /* extra */
       align-items: center;
-      background-color: v.$primary-color; // Color de fondo rojo
+      background-color: v.$primary-color;
       padding: 20px;
       border-radius: 10px;
-      /* extra */
 
       .radio-group {
         width: 100%;
@@ -156,9 +154,9 @@
 
       .checkbox-container {
         display: flex;
-        justify-content: space-between; // Separa el checkbox y el botón sin márgenes negativos
-        align-items: center; // Alinea verticalmente
-        width: 100%; // Ocupa todo el ancho disponible
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
         margin-top: 20px;
       }
 
