@@ -1,11 +1,11 @@
 @use "variables" as v;
 @use "sass:color";
 
-.suscripcion {
+.final {
     background-color: v.$text-color;
     color: v.$primary-color;
     text-align: center;
-    height: 30px;
+    height: 50px;
     display: flex;
     align-items: center;
     justify-content: center;
