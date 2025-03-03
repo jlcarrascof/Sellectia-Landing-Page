@@ -2,7 +2,7 @@
 
 .seccion-ciencias {
     background-color: v.$secondary-color;
-    position: relative; // Asegura que los elementos absolute se posicionen dentro de esta sección
+    position: relative;
     text-align: center;
     padding: 6rem 2rem;
     overflow: visible;
@@ -24,7 +24,7 @@
         position: absolute;
         top: 50%;
         left: 50%;
-        transform: translate(-50%, -50%); // Ajusta la posición al centro
+        transform: translate(-50%, -50%);
         width: 300px;
         max-width: none;
         z-index: 1;
